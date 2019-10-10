@@ -1,0 +1,5 @@
+video-safetyenv/
+jobs/
+**/frames/
+*.log
+**/__pycache__/
