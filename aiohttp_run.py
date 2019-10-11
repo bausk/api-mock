@@ -15,6 +15,6 @@ async def index(request):
 if __name__ == '__main__':
     app = web.Application()
     # configure app
-	app.router.add_get('/', index)
+    app.router.add_get('/', index)
     args = parser.parse_args()
     web.run_app(app, path=args.path, port=args.port)
