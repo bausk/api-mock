@@ -1,6 +1,9 @@
 #!/bin/bash
 cp /home/ubuntu/safety-api/aiohttp@.service /etc/systemd/system
 cp /home/ubuntu/safety-api/nginx.conf /etc/nginx
+cd /home/ubuntu/safety-api
+source ./venv/bin/activate
+pip install -r requirements.txt
 systemctl enable aiohttp\@{1..5}.service
 systemctl daemon-reload
 systemctl start aiohttp@{1..5}
