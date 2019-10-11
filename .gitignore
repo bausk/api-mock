@@ -1,5 +1,8 @@
 video-safetyenv/
 jobs/
+.idea/
+.venv/
+.code/
 **/frames/
 *.log
 **/__pycache__/
