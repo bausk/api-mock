@@ -6,6 +6,6 @@ User=ubuntu
 Group=www-data
 WorkingDirectory=/home/ubuntu/safety-api
 Environment="PATH=/home/ubuntu/safety-api/venv/bin"
-ExecStart=/home/ubuntu/safety-api/venv/bin/python /home/ubuntu/safety-api/aiohttp_run.py --path=/tmp/example_%i.sock
+ExecStart=/home/ubuntu/safety-api/venv/bin/python /home/ubuntu/safety-api/aiohttp_run.py --port=808%i
 [Install]
 WantedBy=multi-user.target
