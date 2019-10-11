@@ -2,6 +2,7 @@
 add-apt-repository ppa:deadsnakes/ppa -y
 apt update
 apt-get install -y python3.6
+apt-get install -y pip3
 pip3 install virtualenv
 cd /home/ubuntu/safety-api
 virtualenv -p python3.6 venv
